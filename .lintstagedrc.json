@@ -1,5 +1,5 @@
 {
   "*": "prettier --ignore-unknown --write",
-  "*.rb": "bundle exec rubocop -A",
+  "*.{rake,rb}": "bundle exec rubocop -A",
   "Gemfile,Rakefile": "bundle exec rubocop -A"
 }
