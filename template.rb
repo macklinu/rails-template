@@ -5,9 +5,7 @@ def add_gems
   development_and_test_gems = <<-RUBY
   gem "awesome_print"
   gem "bullet"
-  gem "factory_bot_rails"
   gem "faker"
-  gem "rspec-rails"
   gem "standard"
   RUBY
 
@@ -36,18 +34,6 @@ def setup_tailwind
   run "yarn add -D @tailwindcss/typography @tailwindcss/forms @tailwindcss/aspect-ratio @tailwindcss/line-clamp"
 
   copy_file "tailwind.config.js"
-end
-
-def setup_rspec
-  generate "rspec:install"
-end
-
-def setup_factory_bot
-  inject_into_file(
-    "spec/rails_helper.rb",
-    "config.include FactoryBot::Syntax::Methods\n\n",
-    after: "RSpec.configure do |config|"
-  )
 end
 
 def setup_strong_migrations
@@ -133,12 +119,10 @@ after_bundle do
   setup_prettier
   setup_standard
   setup_tailwind
-  setup_rspec
 
   configure_generators
   setup_strong_migrations
   create_uuid_migration
-  setup_factory_bot
   setup_devise
   setup_bullet
 
