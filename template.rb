@@ -1,6 +1,7 @@
 def add_gems
   gem "devise"
   gem "strong_migrations"
+  gem "view_component"
 
   development_and_test_gems = <<-RUBY
   gem "awesome_print"

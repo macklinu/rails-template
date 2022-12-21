@@ -10,6 +10,7 @@ What's in the box?
 - PostgreSQL database
 - esbuild for bundling JS assets
 - [strong_migrations][] for helping me understand if I'm writing a bad migration or not
+- [view_component][] for building views
 - Code formatting
   - [Prettier](https://prettier.io/)
   - [standard](https://github.com/testdouble/standard)
@@ -40,3 +41,4 @@ Explaning the arguments:
 [rails]: https://rubyonrails.org/
 [strong_migrations]: https://github.com/ankane/strong_migrations
 [tailwind]: https://tailwindcss.com/
+[view_component]: https://viewcomponent.org/
