@@ -72,7 +72,6 @@ def setup_bullet
 end
 
 def configure_generators
-  # https://www.codewithjason.com/get-rspec-skip-view-specs-generate-scaffolds/
   config = <<-RUBY
     config.generators do |generator|
       generator.orm :active_record, primary_key_type: :uuid
@@ -81,7 +80,7 @@ def configure_generators
       generator.helper false
       generator.stylesheets false
 
-      generator.test_framework :rspec,
+      generator.test_framework :test_unit,
         view_specs: false,
         routing_specs: false,
         helper_specs: false,
