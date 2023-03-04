@@ -32,10 +32,11 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  arm64-darwin-22
 
 DEPENDENCIES
   rubocop (~> 1.35)
   standard
 
 BUNDLED WITH
-   2.3.7
+   2.3.26
